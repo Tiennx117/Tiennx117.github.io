@@ -1,0 +1,1 @@
+export { DemoControlModule as default, DemoControlModule } from './DemoControlModule';

@@ -1,0 +1,114 @@
+.grid-view {
+    .grid-view-header {
+        .filter {
+            >.input-group-append.btn-filter-basic {
+                >.btn {
+                    border-top-right-radius: 0.2rem;
+                    border-bottom-right-radius: 0.2rem;
+                }
+            }
+
+        }
+
+        .filter-adv-container {
+            fieldset {
+                border: 1px solid #dee2e6;
+                margin-inline-start: 2px;
+                margin-inline-end: 2px;
+                padding-block-start: 0.35em;
+                padding-inline-start: 0.75em;
+                padding-inline-end: 0.75em;
+                padding-block-end: 0.625em;
+                min-inline-size: min-content;
+
+                legend {
+                    width: auto;
+                    font-size: inherit;
+                }
+            }
+        }
+    }
+
+}
+
+.grid-table {
+    .grid-selected {
+        .custom-checkbox {
+            padding-left: 0;
+            min-width: .7rem;
+            min-height: .7rem;
+
+            .custom-control-label {
+                cursor: pointer;
+
+                &::before,
+                &::after {
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    .sort {
+        cursor: pointer;
+        font-size: 1em;
+
+        .iconify {
+            opacity: 0.3;
+        }
+
+        &.asc {
+            .asc-icon {
+                opacity: 1;
+            }
+        }
+
+        &.desc {
+            .desc-icon {
+                opacity: 1;
+            }
+        }
+    }
+
+    .selected {
+        background-color: rgba(0, 0, 0, 0.075);
+    }
+
+    .view-action {}
+}
+
+.grid-pagination {
+    .select-page-size {
+        select {
+            width: auto;
+            margin: 0 5px;
+
+        }
+    }
+
+    .pagination {
+        .select-page {
+            .page-link {
+                padding: 0;
+                height: 35px;
+                display: flex;
+                align-items: center;
+                background: none;
+                color: #495057;
+                width: 100px;
+
+                .form-control {
+                    width: 50px;
+                    border: none;
+                    text-align: right;
+                    padding: 0.375rem 0rem;
+
+                    :focus {
+                        border: none;
+                    }
+                }
+            }
+
+        }
+    }
+}
