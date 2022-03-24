@@ -1,0 +1,1 @@
+export { UserModule as default, UserModule } from './UserModule';
